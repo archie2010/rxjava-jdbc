@@ -24,6 +24,50 @@ Features
 
 Maven site reports are [here](http://davidmoten.github.io/rxjava-jdbc/index.html) including [javadoc](http://davidmoten.github.io/rxjava-jdbc/apidocs/index.html).
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [rxjava-jdbc](#)
+	- [Features](#)
+	- [Todo](#)
+	- [Build instructions](#)
+	- [Getting started](#)
+	- [Query types](#)
+	- [Functional composition of JDBC calls](#)
+	- [About toBlocking](#)
+	- [Dependencies](#)
+	- [Mixing explicit and Observable parameters](#)
+	- [Passing multiple parameter sets to a query](#)
+	- [Named parameters](#)
+	- [Processing a ResultSet](#)
+	- [Mapping](#)
+	- [Explicit mapping](#)
+	- [Automap](#)
+		- [Automap using an interface](#)
+		- [Automap using a concrete class](#)
+	- [Auto mappings](#)
+	- [Tuples](#)
+		- [Tuple2](#)
+		- [TupleN](#)
+	- [Returning generated keys](#)
+	- [Large objects support](#)
+		- [Insert a Clob](#)
+		- [Insert a Null Clob](#)
+		- [Read a Clob](#)
+		- [Insert a Blob](#)
+		- [Insert a Null Blob](#)
+		- [Read a Blob](#)
+	- [Lift](#)
+	- [Transactions](#)
+		- [Transactions as dependency](#)
+		- [onNext Transactions](#)
+	- [Asynchronous queries](#)
+	- [Backpressure](#)
+	- [Logging](#)
+	- [Database Connection Pools](#)
+	- [Using a custom connection pool](#)
+	- [Use a single Connection](#)
+	- [Note for SQLite Users](#)
+
 Todo
 ------------
 * Callable statements
