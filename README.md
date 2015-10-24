@@ -704,8 +704,8 @@ Database db = Database.builder().connectionProvider(cp).build();
 
 This method could be used to supply a JNDI datasource for example.
 
-#Use a single Connection
----------------------------
+Use a single Connection
+----------------------------
 A ```Database``` can be instantiated from a single ```java.sql.Connection``` which will 
 be used for all queries in companion with the current thread ```Scheduler``` (```Schedulers.trampoline()```).
 The connection is wrapped in a ```ConnectionNonClosing``` which suppresses close calls so that the connection will
@@ -716,7 +716,7 @@ The connection is wrapped in a ```ConnectionNonClosing``` which suppresses close
  Database db = Database.from(con);
  ```
 Note for SQLite Users
----------------------------
+----------------------------
 *rxjava-jdbc* does support [SQLite](http://sqlite.org/). But due to the [SQLite architecture](http://sqlite.org/faq.html#q5) there are limitations particularly with write operations (CREATE, INSERT, UPDATE, DELETE). If your application has any write operations, [use a single connection](#use-a-single-connection). If a source ```Observable``` pushes emissions through a series of database read/write operations, always collect emissions and flatten them between each database read/write operation. This will prevent a [SQLITE_INTERRUPT](https://sqlite.org/rescode.html#interrupt) exception by never having more than one query open at a time. 
 
 ```java
