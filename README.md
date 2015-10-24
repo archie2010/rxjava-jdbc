@@ -24,7 +24,8 @@ Features
 
 Maven site reports are [here](http://davidmoten.github.io/rxjava-jdbc/index.html) including [javadoc](http://davidmoten.github.io/rxjava-jdbc/apidocs/index.html).
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+Table of Contents
+------------------------
 
 - [rxjava-jdbc](#)
 	- [Features](#)
@@ -74,7 +75,6 @@ Todo
 
 Build instructions
 -------------------
-
 ```
 git clone https://github.com/davidmoten/rxjava-jdbc.git
 cd rxjava-jdbc
