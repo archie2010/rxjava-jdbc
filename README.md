@@ -717,7 +717,7 @@ The connection is wrapped in a ```ConnectionNonClosing``` which suppresses close
  ```
 Note for SQLite Users
 ---------------------------
-RxJava-JDBC does support [SQLite](http://sqlite.org/). But due to the [SQLite architecture](http://sqlite.org/faq.html#q5) there are limitations particularly with write operations (CREATE, INSERT, UPDATE, DELETE). If your application has any write operations, [use a single connection](#use-a-single-connection). If a source ```Observable``` pushes emissions through a series of database read/write operations, always collect emissions and flatten them between each database read/write operation. This will prevent a [SQLITE_INTERRUPT](https://sqlite.org/rescode.html#interrupt) exception by never having more than one query open at a time. 
+*rxjava-jdbc* does support [SQLite](http://sqlite.org/). But due to the [SQLite architecture](http://sqlite.org/faq.html#q5) there are limitations particularly with write operations (CREATE, INSERT, UPDATE, DELETE). If your application has any write operations, [use a single connection](#use-a-single-connection). If a source ```Observable``` pushes emissions through a series of database read/write operations, always collect emissions and flatten them between each database read/write operation. This will prevent a [SQLITE_INTERRUPT](https://sqlite.org/rescode.html#interrupt) exception by never having more than one query open at a time. 
 
 ```java
 Observable<MyItem> = Observable.from(itemstoInsert)
